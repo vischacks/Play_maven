@@ -4,7 +4,7 @@
           
 # Play - Progetto di programmazione 2024/2025
 
-<<<<<<< HEAD
+
 [![Java Version](https://img.shields.io/badge/Java-17%2B-blue.svg)](https://www.oracle.com/java/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Build: Maven](https://img.shields.io/badge/Build-Maven-green.svg)](https://maven.apache.org/)
@@ -20,7 +20,7 @@ Play è un'applicazione educativa progettata per aiutare gli studenti ad apprend
 4. **Quiz** - Rispondi correttamente alle domande
 
 ## Caratteristiche
-<<<<<<< HEAD
+
 - 🎨 Interfaccia utente intuitiva basata su JavaFX
 - 🎯 Tre livelli di difficoltà per ogni tipo di esercizio (Facile, Medio, Difficile)
 - 📊 Tracciamento dei progressi dell'utente
@@ -48,7 +48,7 @@ Play è un'applicazione educativa progettata per aiutare gli studenti ad apprend
 ## Installazione
 1. Clona il repository:
    ```bash
-   git clone https://github.com/vischacks/Play.git
+   git clone https://github.com/vischacks/Play_maven.git
    ```
 2. Naviga nella directory del progetto:
    ```bash
@@ -79,7 +79,7 @@ ID,Domanda,Risposta,Difficoltà,Tipo
 ```
 
 =======
->>>>>>> f1ba8e097e30858065fa6b1d47e09206419a05a0
+
 ## Come Utilizzare
 1. Avvia l'applicazione
 2. Inserisci il tuo nome utente
@@ -88,7 +88,7 @@ ID,Domanda,Risposta,Difficoltà,Tipo
 5. Completa gli esercizi e verifica le tue risposte
 6. Visualizza il tuo progresso nella barra di completamento
 
-<<<<<<< HEAD
+
 ## Risoluzione dei Problemi Comuni
 - **L'applicazione non si avvia**: Verifica di avere Java 17 installato (`java -version`)
 - **Errori di compilazione**: Assicurati di avere Maven correttamente configurato
@@ -96,7 +96,6 @@ ID,Domanda,Risposta,Difficoltà,Tipo
 - **Problemi di JavaFX**: Verifica che il modulo JavaFX sia incluso nel classpath
 
 =======
->>>>>>> f1ba8e097e30858065fa6b1d47e09206419a05a0
 ## Contribuire
 Siamo aperti a contributi! Se desideri contribuire al progetto, segui questi passaggi:
 1. Fai un fork del repository
@@ -113,7 +112,7 @@ Siamo aperti a contributi! Se desideri contribuire al progetto, segui questi pas
 - Usa commit semantici
 
 =======
->>>>>>> f1ba8e097e30858065fa6b1d47e09206419a05a0
+
 ## Licenza
 Questo progetto è distribuito con licenza MIT. Vedi il file `LICENSE` per maggiori dettagli.
 
