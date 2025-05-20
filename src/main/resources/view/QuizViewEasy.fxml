@@ -12,7 +12,7 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 
-<BorderPane xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.QuizController">
+<BorderPane xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.QuizController">
     <top>
         <HBox alignment="CENTER_LEFT" spacing="5.0" style="-fx-background-color: #336699;">
             <children>
@@ -33,7 +33,7 @@
                      <VBox alignment="CENTER" spacing="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
                         <children>
                            <Label text="Scrivi la lettera della risposta corretta:" />
-                           <TextArea editable="false" prefHeight="200.0" prefWidth="600.0" text="Quale parola chiave si usa per dichiarare una classe in Java?&#10;1) method&#10;2) class &#10;3) define&#10;&#10;" wrapText="true" />
+                           <TextArea editable="false" prefHeight="200.0" prefWidth="600.0" text="Quale parola chiave si usa per dichiarare una classe in Java?&#10;A) method&#10;B) class &#10;C) define&#10;&#10;" wrapText="true" />
                            <TextArea fx:id="userInput21" prefHeight="50.0" prefWidth="600.0" promptText="Fill in the blanks here..." />
                            <HBox alignment="CENTER" spacing="10.0">
                               <children>
@@ -56,7 +56,7 @@
                      <VBox alignment="CENTER" spacing="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
                         <children>
                            <Label text="Scrivi la lettera della risposta corretta:" />
-                           <TextArea editable="false" prefHeight="200.0" prefWidth="600.0" text="Quale di questi tipi di dati è un tipo primitivo in Java?&#10;A) String&#10; B) ArrayList&#10; C) int " wrapText="true" />
+                           <TextArea editable="false" prefHeight="200.0" prefWidth="600.0" text="Quale di questi tipi di dati è un tipo primitivo in Java?&#10;A) String&#10;B) ArrayList&#10;C) int " wrapText="true" />
                            <TextArea fx:id="userInput22" prefHeight="50.0" prefWidth="600.0" promptText="Fill in the blanks here..." />
                            <HBox alignment="CENTER" spacing="10.0">
                               <children>
@@ -79,7 +79,7 @@
                      <VBox alignment="CENTER" spacing="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
                         <children>
                            <Label text="Scrivi il numero della risposta corretta:" />
-                           <TextArea editable="false" prefHeight="200.0" prefWidth="600.0" text="Cosa stampa il seguente codice?&#10;System.out.println(2 + 3 * 4);&#10;A) 20&#10; B) 14 &#10; C) 18&#10;" wrapText="true" />
+                           <TextArea editable="false" prefHeight="200.0" prefWidth="600.0" text="Cosa stampa il seguente codice?&#10;System.out.println(2 + 3 * 4);&#10;A) 20&#10;B) 14 &#10;C) 18&#10;" wrapText="true" />
                            <TextArea fx:id="userInput23" prefHeight="50.0" prefWidth="600.0" promptText="Fill in the blanks here..." />
                            <HBox alignment="CENTER" spacing="10.0">
                               <children>
@@ -102,7 +102,7 @@
                      <VBox alignment="CENTER" spacing="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
                         <children>
                            <Label text="Scrivi il numero della risposta corretta:" />
-                           <TextArea editable="false" prefHeight="200.0" prefWidth="600.0" text="Qual è il valore predefinito di un attributo boolean non inizializzato in Java?&#10;A) true&#10; B) false &#10; C) null&#10;&#10;" wrapText="true" />
+                           <TextArea editable="false" prefHeight="200.0" prefWidth="600.0" text="Qual è il valore predefinito di un attributo boolean non inizializzato in Java?&#10;A) true&#10;B) false &#10;C) null&#10;&#10;" wrapText="true" />
                            <TextArea fx:id="userInput24" prefHeight="50.0" prefWidth="600.0" promptText="Fill in the blanks here..." />
                            <HBox alignment="CENTER" spacing="10.0">
                               <children>
@@ -125,7 +125,7 @@
                      <VBox alignment="CENTER" spacing="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
                         <children>
                            <Label text="Scrivi il numero della risposta corretta:" />
-                           <TextArea editable="false" prefHeight="200.0" prefWidth="600.0" text="Come si crea un'istanza di una classe Persona in Java?&#10;A) Persona p = new Persona(); &#10; B) Persona p = Persona();&#10; C) new Persona p = Persona();&#10;&#10;" wrapText="true" />
+                           <TextArea editable="false" prefHeight="200.0" prefWidth="600.0" text="Come si crea un'istanza di una classe Persona in Java?&#10;A) Persona p = new Persona(); &#10;B) Persona p = Persona();&#10;C) new Persona p = Persona();&#10;&#10;" wrapText="true" />
                            <TextArea fx:id="userInput25" prefHeight="50.0" prefWidth="600.0" promptText="Fill in the blanks here..." />
                            <HBox alignment="CENTER" spacing="10.0">
                               <children>
@@ -148,7 +148,7 @@
                      <VBox alignment="CENTER" spacing="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
                         <children>
                            <Label text="Scrivi il numero della risposta corretta:" />
-                           <TextArea editable="false" prefHeight="200.0" prefWidth="600.0" text="Quale parola chiave si usa per ereditare da una classe in Java?&#10;A) implements&#10; B) extends &#10; C) inherit&#10;&#10;" wrapText="true" />
+                           <TextArea editable="false" prefHeight="200.0" prefWidth="600.0" text="Quale parola chiave si usa per ereditare da una classe in Java?&#10;A) implements&#10;B) extends &#10;C) inherit&#10;&#10;" wrapText="true" />
                            <TextArea fx:id="userInput26" prefHeight="50.0" prefWidth="600.0" promptText="Fill in the blanks here..." />
                            <HBox alignment="CENTER" spacing="10.0">
                               <children>
@@ -171,7 +171,7 @@
                      <VBox alignment="CENTER" spacing="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
                         <children>
                            <Label text="Scrivi il numero della risposta corretta:" />
-                           <TextArea editable="false" prefHeight="200.0" prefWidth="600.0" text="In Java, cosa rappresenta public static void main(String[] args)?&#10;A) Un metodo qualsiasi&#10; B) Il costruttore della classe&#10; C) Il punto di ingresso del programma &#10;&#10;" wrapText="true" />
+                           <TextArea editable="false" prefHeight="200.0" prefWidth="600.0" text="In Java, cosa rappresenta public static void main(String[] args)?&#10;A) Un metodo qualsiasi&#10;B) Il costruttore della classe&#10;C) Il punto di ingresso del programma &#10;&#10;" wrapText="true" />
                            <TextArea fx:id="userInput27" prefHeight="50.0" prefWidth="600.0" promptText="Fill in the blanks here..." />
                            <HBox alignment="CENTER" spacing="10.0">
                               <children>
@@ -194,7 +194,7 @@
                      <VBox alignment="CENTER" spacing="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
                         <children>
                            <Label text="Scrivi il numero della risposta corretta:" />
-                           <TextArea editable="false" prefHeight="200.0" prefWidth="600.0" text="Quale di queste istruzioni è usata per iterare su un array in Java?&#10;A) while&#10; B) for &#10; C) case&#10;&#10;" wrapText="true" />
+                           <TextArea editable="false" prefHeight="200.0" prefWidth="600.0" text="Quale di queste istruzioni è usata per iterare su un array in Java?&#10;A) while&#10;B) for &#10;C) case&#10;&#10;" wrapText="true" />
                            <TextArea fx:id="userInput28" prefHeight="50.0" prefWidth="600.0" promptText="Fill in the blanks here..." />
                            <HBox alignment="CENTER" spacing="10.0">
                               <children>
@@ -217,7 +217,7 @@
                      <VBox alignment="CENTER" spacing="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
                         <children>
                            <Label text="Scrivi il numero della risposta corretta:" />
-                           <TextArea editable="false" prefHeight="200.0" prefWidth="600.0" text="Quale di questi operatori è usato per il confronto di uguaglianza in Java?&#10;A) =&#10; B) == &#10; C) ===&#10;" wrapText="true" />
+                           <TextArea editable="false" prefHeight="200.0" prefWidth="600.0" text="Quale di questi operatori è usato per il confronto di uguaglianza in Java?&#10;A) =&#10;B) == &#10;C) ===&#10;" wrapText="true" />
                            <TextArea fx:id="userInput29" prefHeight="50.0" prefWidth="600.0" promptText="Fill in the blanks here..." />
                            <HBox alignment="CENTER" spacing="10.0">
                               <children>
@@ -240,7 +240,7 @@
                      <VBox alignment="CENTER" spacing="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
                         <children>
                            <Label text="Scrivi il numero della risposta corretta:" />
-                           <TextArea editable="false" prefHeight="200.0" prefWidth="600.0" text="Quale di questi è un commento a linea singola in Java?&#10;A) /* Questo è un commento */&#10; B) // Questo è un commento &#10; C) &lt;!-- Questo è un commento --&gt;&#10;&#10;" wrapText="true" />
+                           <TextArea editable="false" prefHeight="200.0" prefWidth="600.0" text="Quale di questi è un commento a linea singola in Java?&#10;A) /* Questo è un commento */&#10;B) // Questo è un commento &#10;C) &lt;!-- Questo è un commento --&gt;&#10;&#10;" wrapText="true" />
                            <TextArea fx:id="userInput210" prefHeight="50.0" prefWidth="600.0" promptText="Fill in the blanks here..." />
                            <HBox alignment="CENTER" spacing="10.0">
                               <children>

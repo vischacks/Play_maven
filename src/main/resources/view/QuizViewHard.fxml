@@ -12,7 +12,7 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 
-<BorderPane xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.QuizController">
+<BorderPane xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.QuizController">
     <top>
         <HBox alignment="CENTER_LEFT" spacing="5.0" style="-fx-background-color: #336699;">
             <children>
@@ -33,7 +33,7 @@
                      <VBox alignment="CENTER" spacing="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
                         <children>
                            <Label text="Scrivi la lettera della risposta corretta:" />
-                           <TextArea editable="false" prefHeight="200.0" prefWidth="600.0" text="Qual è la differenza tra overloading e overriding in Java?&#10;A) L’overloading permette di ridefinire un metodo della superclasse, mentre l’overriding permette di avere metodi con lo stesso nome ma parametri diversi&#10; B) L’overriding ridefinisce un metodo ereditato da una superclasse mantenendo la stessa firma, mentre l’overloading consente di avere più metodi con lo stesso nome ma con parametri diversi &#10; C) Sono sinonimi e si riferiscono allo stesso concetto&#10;&#10;" wrapText="true" />
+                           <TextArea editable="false" prefHeight="200.0" prefWidth="600.0" text="Qual è la differenza tra overloading e overriding in Java?&#10;A) L’overloading permette di ridefinire un metodo della superclasse, mentre l’overriding permette di avere metodi con lo stesso nome ma parametri diversi&#10;B) L’overriding ridefinisce un metodo ereditato da una superclasse mantenendo la stessa firma, mentre l’overloading consente di avere più metodi con lo stesso nome ma con parametri diversi &#10;C) Sono sinonimi e si riferiscono allo stesso concetto&#10;&#10;" wrapText="true" />
                            <TextArea fx:id="userInput21" prefHeight="50.0" prefWidth="600.0" promptText="Fill in the blanks here..." />
                            <HBox alignment="CENTER" spacing="10.0">
                               <children>
@@ -56,7 +56,7 @@
                      <VBox alignment="CENTER" spacing="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
                         <children>
                            <Label text="Scrivi la lettera della risposta corretta:" />
-                           <TextArea editable="false" prefHeight="200.0" prefWidth="600.0" text="Cosa succede se una classe astratta in Java non implementa tutti i metodi di un’interfaccia che dichiara di implementare?&#10;A) Genera un errore di compilazione &#10; B) Non ci sono problemi, la classe potrà essere istanziata normalmente&#10; C) La classe diventa automaticamente final&#10;" wrapText="true" />
+                           <TextArea editable="false" prefHeight="200.0" prefWidth="600.0" text="Cosa succede se una classe astratta in Java non implementa tutti i metodi di un’interfaccia che dichiara di implementare?&#10;A) Genera un errore di compilazione &#10;B) Non ci sono problemi, la classe potrà essere istanziata normalmente&#10;C) La classe diventa automaticamente final&#10;" wrapText="true" />
                            <TextArea fx:id="userInput22" prefHeight="50.0" prefWidth="600.0" promptText="Fill in the blanks here..." />
                            <HBox alignment="CENTER" spacing="10.0">
                               <children>
@@ -79,7 +79,7 @@
                      <VBox alignment="CENTER" spacing="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
                         <children>
                            <Label text="Scrivi la lettera della risposta corretta:" />
-                           <TextArea editable="false" prefHeight="200.0" prefWidth="600.0" text="Qual è la differenza tra il passaggio di parametri per valore e per riferimento in Java?&#10;A) I tipi primitivi sono passati per valore, mentre gli oggetti sono passati per riferimento &#10; B) Tutti i parametri in Java sono passati per riferimento&#10; C) Tutti i parametri in Java sono passati per valore&#10;" wrapText="true" />
+                           <TextArea editable="false" prefHeight="200.0" prefWidth="600.0" text="Qual è la differenza tra il passaggio di parametri per valore e per riferimento in Java?&#10;A) I tipi primitivi sono passati per valore, mentre gli oggetti sono passati per riferimento &#10;B) Tutti i parametri in Java sono passati per riferimento&#10;C) Tutti i parametri in Java sono passati per valore&#10;" wrapText="true" />
                            <TextArea fx:id="userInput23" prefHeight="50.0" prefWidth="600.0" promptText="Fill in the blanks here..." />
                            <HBox alignment="CENTER" spacing="10.0">
                               <children>
@@ -102,7 +102,7 @@
                      <VBox alignment="CENTER" spacing="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
                         <children>
                            <Label text="Scrivi la lettera della risposta corretta:" />
-                           <TextArea editable="false" prefHeight="200.0" prefWidth="600.0" text="Cosa significa che le stringhe in Java sono immutabili?&#10;A) Una volta creata, una stringa non può essere modificata &#10; B) Le stringhe possono essere modificate, ma solo dai metodi della classe String&#10; C) La classe String può essere estesa per cambiare il suo comportamento&#10;" wrapText="true" />
+                           <TextArea editable="false" prefHeight="200.0" prefWidth="600.0" text="Cosa significa che le stringhe in Java sono immutabili?&#10;A) Una volta creata, una stringa non può essere modificata &#10;B) Le stringhe possono essere modificate, ma solo dai metodi della classe String&#10;C) La classe String può essere estesa per cambiare il suo comportamento&#10;" wrapText="true" />
                            <TextArea fx:id="userInput24" prefHeight="50.0" prefWidth="600.0" promptText="Fill in the blanks here..." />
                            <HBox alignment="CENTER" spacing="10.0">
                               <children>
@@ -125,7 +125,7 @@
                      <VBox alignment="CENTER" spacing="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
                         <children>
                            <Label text="Scrivi la lettera della risposta corretta:" />
-                           <TextArea editable="false" prefHeight="200.0" prefWidth="600.0" text="Perché in Java si consiglia di utilizzare StringBuilder o StringBuffer al posto di String in operazioni ripetute di concatenazione?&#10;A) Perché String è più lento dato che è immutabile &#10; B) Perché StringBuilder è più leggibile di String&#10; C) Perché String occupa più memoria di StringBuilder in ogni caso&#10;" wrapText="true" />
+                           <TextArea editable="false" prefHeight="200.0" prefWidth="600.0" text="Perché in Java si consiglia di utilizzare StringBuilder o StringBuffer al posto di String in operazioni ripetute di concatenazione?&#10;A) Perché String è più lento dato che è immutabile &#10;B) Perché StringBuilder è più leggibile di String&#10;C) Perché String occupa più memoria di StringBuilder in ogni caso&#10;" wrapText="true" />
                            <TextArea fx:id="userInput25" prefHeight="50.0" prefWidth="600.0" promptText="Fill in the blanks here..." />
                            <HBox alignment="CENTER" spacing="10.0">
                               <children>
@@ -148,7 +148,7 @@
                      <VBox alignment="CENTER" spacing="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
                         <children>
                            <Label text="Scrivi la lettera della risposta corretta:" />
-                           <TextArea editable="false" prefHeight="200.0" prefWidth="600.0" text="Qual è la differenza principale tra this e super in Java?&#10;A) this si riferisce all’istanza corrente della classe, mentre super si riferisce alla superclasse &#10; B) super si usa solo nei metodi statici, mentre this si usa solo nei metodi di istanza&#10; C) this e super sono intercambiabili&#10;&#10;" wrapText="true" />
+                           <TextArea editable="false" prefHeight="200.0" prefWidth="600.0" text="Qual è la differenza principale tra this e super in Java?&#10;A) this si riferisce all’istanza corrente della classe, mentre super si riferisce alla superclasse &#10;B) super si usa solo nei metodi statici, mentre this si usa solo nei metodi di istanza&#10;C) this e super sono intercambiabili&#10;&#10;" wrapText="true" />
                            <TextArea fx:id="userInput26" prefHeight="50.0" prefWidth="600.0" promptText="Fill in the blanks here..." />
                            <HBox alignment="CENTER" spacing="10.0">
                               <children>
@@ -171,7 +171,7 @@
                      <VBox alignment="CENTER" spacing="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
                         <children>
                            <Label text="Scrivi la lettera della risposta corretta:" />
-                           <TextArea editable="false" prefHeight="200.0" prefWidth="600.0" text="Perché in Java una classe può estendere una sola classe ma può implementare più interfacce?&#10;A) Per evitare ambiguità dovute all’ereditarietà multipla &#10; B) Per rendere il codice più leggibile&#10; C) Perché Java non supporta i puntatori come C++&#10;&#10;" wrapText="true" />
+                           <TextArea editable="false" prefHeight="200.0" prefWidth="600.0" text="Perché in Java una classe può estendere una sola classe ma può implementare più interfacce?&#10;A) Per evitare ambiguità dovute all’ereditarietà multipla &#10;B) Per rendere il codice più leggibile&#10;C) Perché Java non supporta i puntatori come C++&#10;&#10;" wrapText="true" />
                            <TextArea fx:id="userInput27" prefHeight="50.0" prefWidth="600.0" promptText="Fill in the blanks here..." />
                            <HBox alignment="CENTER" spacing="10.0">
                               <children>
@@ -194,7 +194,7 @@
                      <VBox alignment="CENTER" spacing="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
                         <children>
                            <Label text="Scrivi la lettera della risposta corretta:" />
-                           <TextArea editable="false" prefHeight="200.0" prefWidth="600.0" text="Quale delle seguenti affermazioni è vera riguardo al costruttore di una classe in Java?&#10;A) Se una classe non ha un costruttore esplicito, il compilatore ne fornisce uno di default &#10; B) Il costruttore deve sempre avere un tipo di ritorno&#10; C) Un costruttore può essere static&#10;&#10;" wrapText="true" />
+                           <TextArea editable="false" prefHeight="200.0" prefWidth="600.0" text="Quale delle seguenti affermazioni è vera riguardo al costruttore di una classe in Java?&#10;A) Se una classe non ha un costruttore esplicito, il compilatore ne fornisce uno di default &#10;B) Il costruttore deve sempre avere un tipo di ritorno&#10;C) Un costruttore può essere static&#10;&#10;" wrapText="true" />
                            <TextArea fx:id="userInput28" prefHeight="50.0" prefWidth="600.0" promptText="Fill in the blanks here..." />
                            <HBox alignment="CENTER" spacing="10.0">
                               <children>
@@ -217,7 +217,7 @@
                      <VBox alignment="CENTER" spacing="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
                         <children>
                            <Label text="Scrivi la lettera della risposta corretta:" />
-                           <TextArea editable="false" prefHeight="200.0" prefWidth="600.0" text="Cosa succede se si prova a estendere una classe dichiarata final in Java?&#10;A) Si verifica un errore di compilazione &#10; B) La classe figlia non eredita i metodi della classe final&#10; C) Il programma va in errore solo a runtime&#10;&#10;" wrapText="true" />
+                           <TextArea editable="false" prefHeight="200.0" prefWidth="600.0" text="Cosa succede se si prova a estendere una classe dichiarata final in Java?&#10;A) Si verifica un errore di compilazione &#10;B) La classe figlia non eredita i metodi della classe final&#10;C) Il programma va in errore solo a runtime&#10;&#10;" wrapText="true" />
                            <TextArea fx:id="userInput29" prefHeight="50.0" prefWidth="600.0" promptText="Fill in the blanks here..." />
                            <HBox alignment="CENTER" spacing="10.0">
                               <children>
@@ -240,7 +240,7 @@
                      <VBox alignment="CENTER" spacing="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
                         <children>
                            <Label text="Scrivi la lettera della risposta corretta:" />
-                           <TextArea editable="false" prefHeight="200.0" prefWidth="600.0" text="Perché si usa la parola chiave static in Java?&#10;A) Per definire variabili o metodi che appartengono alla classe e non all’istanza &#10; B) Per impedire la modifica di una variabile&#10; C) Per rendere un metodo più veloce&#10;&#10;" wrapText="true" />
+                           <TextArea editable="false" prefHeight="200.0" prefWidth="600.0" text="Perché si usa la parola chiave static in Java?&#10;A) Per definire variabili o metodi che appartengono alla classe e non all’istanza &#10;B) Per impedire la modifica di una variabile&#10;C) Per rendere un metodo più veloce&#10;&#10;" wrapText="true" />
                            <TextArea fx:id="userInput210" prefHeight="50.0" prefWidth="600.0" promptText="Fill in the blanks here..." />
                            <HBox alignment="CENTER" spacing="10.0">
                               <children>
