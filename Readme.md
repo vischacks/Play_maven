@@ -37,7 +37,7 @@ Play è un'applicazione educativa progettata per aiutare gli studenti ad apprend
    ```
 2. Naviga nella directory del progetto:
    ```bash
-   cd Play
+   cd Play-maven-version
    ```
 3. Compila il progetto con Maven:
    ```bash
