@@ -43,7 +43,7 @@ Play è un'applicazione educativa progettata per aiutare gli studenti ad apprend
 ## Requisiti di Sistema
 - Java 11 o superiore
 - Maven per la gestione delle dipendenze
->>>>>>> f1ba8e097e30858065fa6b1d47e09206419a05a0
+
 
 ## Installazione
 1. Clona il repository:
@@ -70,7 +70,7 @@ Play è un'applicazione educativa progettata per aiutare gli studenti ad apprend
 - `src/main/resources/view/` - File FXML per l'interfaccia utente
 - `src/main/resources/exercises/` - File CSV contenenti le risposte corrette per gli esercizi
 
-<<<<<<< HEAD
+
 ### Struttura dei File CSV
 I file CSV degli esercizi seguono questo formato:
 ```csv
@@ -104,7 +104,7 @@ Siamo aperti a contributi! Se desideri contribuire al progetto, segui questi pas
 4. Push al branch (`git push origin feature/NuovaFeature`)
 5. Apri una Pull Request
 
-<<<<<<< HEAD
+
 ### Linee Guida per il Contributo
 - Segui le convenzioni di codice Java
 - Aggiungi test unitari per le nuove funzionalità
