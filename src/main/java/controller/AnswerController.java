@@ -2,11 +2,9 @@ package controller;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
-import model.User;
 import utils.FileUtils;
 
 import java.text.NumberFormat;
-import java.text.ParseException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
