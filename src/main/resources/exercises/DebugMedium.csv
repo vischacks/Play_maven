@@ -1,0 +1,10 @@
+if (num % 2 == 0) {
+if (text != null) System.out.println(text.length());
+double result = (double) a / b;
+int i = 0; while (i < 10) { i++; }
+case 2: System.out.println(“Weekday”); break;
+values[4] = 10;
+int y = Integer.parseInt(“5”);
+String category = (age > 18) ? “Adult” : “Teen”;
+public static void display() {
+try { int value = Integer.parseInt(“123”); } catch (NumberFormatException e) { System.out.println(“Invalid number format!”); }

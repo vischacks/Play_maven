@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CodeDebugController">
+    <top>
+        <HBox alignment="CENTER_LEFT" spacing="5.0" style="-fx-background-color: #336699;">
+            <children>
+                <Label style="-fx-text-fill: white; -fx-font-size: 16px;" text="Debug the code" />
+                <Label style="-fx-text-fill: white; -fx-font-size: 16px;" text="PLAY CODE" />
+            </children>
+            <padding>
+                <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+            </padding>
+        </HBox>
+    </top>
+    <center>
+        <TabPane fx:id="tabPane" tabClosingPolicy="UNAVAILABLE">
+            <!-- Repeat this Tab structure for each of your 10 tabs -->
+            <Tab text="1.">
+                <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="445.0" prefWidth="658.0">
+                        <children>
+                            <VBox alignment="CENTER" spacing="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+                                <children>
+                                    <Label text="Correggi la riga contenente il codice sbagliato" />
+                                    <TextArea editable="false" prefHeight="200.0" prefWidth="600.0" text="public class HelloWorld {&#10;public static void main(String[] args) {&#10;System.out.println(&quot;Hello World!);&#10;}&#10;}" wrapText="true" />
+                                    <TextArea fx:id="userInput1" prefHeight="50.0" prefWidth="600.0" promptText="Fill in the blanks here..." />
+                                    <HBox alignment="CENTER" spacing="10.0">
+                                        <children>
+                                            <Button onAction="#handleCheckButtonAction" text="Check" />
+                                            <Button onAction="#handleBackButton" text="Back" />
+                                            <Button fx:id="nextButton1" onAction="#handleNextButtonAction" text="Next" />
+                                        </children>
+                                    </HBox>
+                                </children>
+                            </VBox>
+                     <Button fx:id="HomeButton1" layoutX="300.0" layoutY="400.0" mnemonicParsing="false" onAction="#handleHomeButtonAction" text="Home" />
+                        </children>
+                    </AnchorPane>
+                </content>
+            </Tab>
+            <Tab text="2.">
+                <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="445.0" prefWidth="658.0">
+                        <children>
+                            <VBox alignment="CENTER" spacing="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+                                <children>
+                                    <Label text="Correggi la riga contenente il codice sbagliato" />
+                                    <TextArea editable="false" prefHeight="200.0" prefWidth="600.0" text="public class CheckNumber {&#10;public static void main(String[] args) {&#10;int x = 15;&#10;if x &gt; 10 {&#10;System.out.println(&quot;Greater&quot;);&#10;                  }&#10;          }&#10;}&#10;&#10;&#10;" wrapText="true" />
+                                    <TextArea fx:id="userInput2" prefHeight="50.0" prefWidth="600.0" promptText="Fill in the blanks here..." />
+                                    <HBox alignment="CENTER" spacing="10.0">
+                                        <children>
+                                            <Button onAction="#handleCheckButtonAction" text="Check" />
+                                            <Button onAction="#handleBackButton" text="Back" />
+                                            <Button onAction="#handleNextButtonAction" text="Next" />
+                                        </children>
+                                    </HBox>
+                                </children>
+                            </VBox>
+                     <Button fx:id="HomeButton2" layoutX="300.0" layoutY="400.0" mnemonicParsing="false" onAction="#handleHomeButtonAction" text="Home" />
+                        </children>
+                    </AnchorPane>
+                </content>
+            </Tab>
+            <Tab text="3.">
+                <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="445.0" prefWidth="658.0">
+                        <children>
+                            <VBox alignment="CENTER" spacing="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+                                <children>
+                                    <Label text="Correggi la riga contenente il codice sbagliato" />
+                                    <TextArea editable="false" prefHeight="200.0" prefWidth="600.0" text="public class ArrayExample {&#10;public static void main(String[] args) {&#10;int[] numbers = {1, 2, 3};&#10;System.out.println(numbers[3]);&#10;         }&#10;}&#10;&#10;" wrapText="true" />
+                                    <TextArea fx:id="userInput3" prefHeight="50.0" prefWidth="600.0" promptText="Fill in the blanks here..." />
+                                    <HBox alignment="CENTER" spacing="10.0">
+                                        <children>
+                                            <Button onAction="#handleCheckButtonAction" text="Check" />
+                                            <Button onAction="#handleBackButton" text="Back" />
+                                            <Button onAction="#handleNextButtonAction" text="Next" />
+                                        </children>
+                                    </HBox>
+                                </children>
+                            </VBox>
+                     <Button fx:id="HomeButton3" layoutX="300.0" layoutY="400.0" mnemonicParsing="false" onAction="#handleHomeButtonAction" text="Home" />
+                        </children>
+                    </AnchorPane>
+                </content>
+            </Tab>
+            <Tab text="4.">
+                <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="445.0" prefWidth="658.0">
+                        <children>
+                            <VBox alignment="CENTER" spacing="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+                                <children>
+                                    <Label text="Correggi la riga contenente il codice sbagliato" />
+                                    <TextArea editable="false" prefHeight="200.0" prefWidth="600.0" text="public class MyClass {&#10;public static void main(String args) {&#10;System.out.println(&quot;Welcome to MyClass&quot;);&#10;        }&#10;}&#10;&#10;" wrapText="true" />
+                                    <TextArea fx:id="userInput4" prefHeight="50.0" prefWidth="600.0" promptText="Fill in the blanks here..." />
+                                    <HBox alignment="CENTER" spacing="10.0">
+                                        <children>
+                                            <Button onAction="#handleCheckButtonAction" text="Check" />
+                                            <Button onAction="#handleBackButton" text="Back" />
+                                            <Button onAction="#handleNextButtonAction" text="Next" />
+                                        </children>
+                                    </HBox>
+                                </children>
+                            </VBox>
+                     <Button fx:id="HomeButton4" layoutX="300.0" layoutY="400.0" mnemonicParsing="false" onAction="#handleHomeButtonAction" text="Home" />
+                        </children>
+                    </AnchorPane>
+                </content>
+            </Tab>
+            <Tab text="5.">
+                <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="445.0" prefWidth="658.0">
+                        <children>
+                            <VBox alignment="CENTER" spacing="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+                                <children>
+                                    <Label text="Correggi la riga contenente il codice sbagliato" />
+                                    <TextArea editable="false" prefHeight="200.0" prefWidth="600.0" text="public class Division {&#10;public static void main(String[] args) {&#10;int result = 10 / 0;&#10;System.out.println(&quot;Result: &quot; + result);&#10;       }&#10;}&#10;&#10;&#10;" wrapText="true" />
+                                    <TextArea fx:id="userInput5" prefHeight="50.0" prefWidth="600.0" promptText="Fill in the blanks here..." />
+                                    <HBox alignment="CENTER" spacing="10.0">
+                                        <children>
+                                            <Button onAction="#handleCheckButtonAction" text="Check" />
+                                            <Button onAction="#handleBackButton" text="Back" />
+                                            <Button onAction="#handleNextButtonAction" text="Next" />
+                                        </children>
+                                    </HBox>
+                                </children>
+                            </VBox>
+                     <Button fx:id="HomeButton5" layoutX="300.0" layoutY="400.0" mnemonicParsing="false" onAction="#handleHomeButtonAction" text="Home" />
+                        </children>
+                    </AnchorPane>
+                </content>
+            </Tab>
+            <Tab text="6.">
+                <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="445.0" prefWidth="658.0">
+                        <children>
+                            <VBox alignment="CENTER" spacing="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+                                <children>
+                                    <Label text="Correggi la riga contenente il codice sbagliato" />
+                                    <TextArea editable="false" prefHeight="200.0" prefWidth="600.0" text="public class Concatenation {&#10;    public static void main(String[] args) {&#10;        String text = &quot;Hello&quot; + 5 + 3;&#10;        System.out.println(text);&#10;    }&#10;}&#10;&#10;&#10;" wrapText="true" />
+                                    <TextArea fx:id="userInput6" prefHeight="50.0" prefWidth="600.0" promptText="Fill in the blanks here..." />
+                                    <HBox alignment="CENTER" spacing="10.0">
+                                        <children>
+                                            <Button onAction="#handleCheckButtonAction" text="Check" />
+                                            <Button onAction="#handleBackButton" text="Back" />
+                                            <Button onAction="#handleNextButtonAction" text="Next" />
+                                        </children>
+                                    </HBox>
+                                </children>
+                            </VBox>
+                     <Button fx:id="HomeButton6" layoutX="300.0" layoutY="400.0" mnemonicParsing="false" onAction="#handleHomeButtonAction" text="Home" />
+                        </children>
+                    </AnchorPane>
+                </content>
+            </Tab>
+            <Tab text="7.">
+                <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="445.0" prefWidth="658.0">
+                        <children>
+                            <VBox alignment="CENTER" spacing="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+                                <children>
+                                    <Label text="Correggi la riga contenente il codice sbagliato" />
+                                    <TextArea editable="false" prefHeight="200.0" prefWidth="600.0" text="public class StringExample {&#10;    public static void main(String[] args) {&#10;        String text = &quot;Hello&quot;;&#10;        if (text.equals(&quot;hello&quot;)) {&#10;            System.out.println(&quot;Match found!&quot;);&#10;        }&#10;    }&#10;}&#10;" wrapText="true" />
+                                    <TextArea fx:id="userInput7" prefHeight="50.0" prefWidth="600.0" promptText="Fill in the blanks here..." />
+                                    <HBox alignment="CENTER" spacing="10.0">
+                                        <children>
+                                            <Button onAction="#handleCheckButtonAction" text="Check" />
+                                            <Button onAction="#handleBackButton" text="Back" />
+                                            <Button onAction="#handleNextButtonAction" text="Next" />
+                                        </children>
+                                    </HBox>
+                                </children>
+                            </VBox>
+                     <Button fx:id="HomeButton7" layoutX="300.0" layoutY="400.0" mnemonicParsing="false" onAction="#handleHomeButtonAction" text="Home" />
+                        </children>
+                    </AnchorPane>
+                </content>
+            </Tab>
+            <Tab text="8.">
+                <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="445.0" prefWidth="658.0">
+                        <children>
+                            <VBox alignment="CENTER" spacing="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+                                <children>
+                                    <Label text="Correggi la riga contenente il codice sbagliato" />
+                                    <TextArea editable="false" prefHeight="200.0" prefWidth="600.0" text="public class LoopTest {&#10;    public static void main(String[] args) {&#10;        for (int i = 0; i &lt; 5; i--;) {&#10;            System.out.println(i);&#10;        }&#10;    }&#10;}&#10;&#10;" wrapText="true" />
+                                    <TextArea fx:id="userInput8" prefHeight="50.0" prefWidth="600.0" promptText="Fill in the blanks here..." />
+                                    <HBox alignment="CENTER" spacing="10.0">
+                                        <children>
+                                            <Button onAction="#handleCheckButtonAction" text="Check" />
+                                            <Button onAction="#handleBackButton" text="Back" />
+                                            <Button onAction="#handleNextButtonAction" text="Next" />
+                                        </children>
+                                    </HBox>
+                                </children>
+                            </VBox>
+                     <Button fx:id="HomeButton8" layoutX="300.0" layoutY="400.0" mnemonicParsing="false" onAction="#handleHomeButtonAction" text="Home" />
+                        </children>
+                    </AnchorPane>
+                </content>
+            </Tab>
+            <Tab text="9.">
+                <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="445.0" prefWidth="658.0">
+                        <children>
+                            <VBox alignment="CENTER" spacing="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+                                <children>
+                                    <Label text="Correggi la riga contenente il codice sbagliato" />
+                                    <TextArea editable="false" prefHeight="200.0" prefWidth="600.0" text="public class MethodExample {&#10;    public static void main(String[] args) {&#10;        printMessage();&#10;    }&#10;    &#10;    public void printMessage() {&#10;        System.out.println(&quot;Hello from a method!&quot;);&#10;    }&#10;}&#10;&#10;&#10;" wrapText="true" />
+                                    <TextArea fx:id="userInput9" prefHeight="50.0" prefWidth="600.0" promptText="Fill in the blanks here..." />
+                                    <HBox alignment="CENTER" spacing="10.0">
+                                        <children>
+                                            <Button onAction="#handleCheckButtonAction" text="Check" />
+                                            <Button onAction="#handleBackButton" text="Back" />
+                                            <Button onAction="#handleNextButtonAction" text="Next" />
+                                        </children>
+                                    </HBox>
+                                </children>
+                            </VBox>
+                     <Button fx:id="HomeButton9" layoutX="300.0" layoutY="400.0" mnemonicParsing="false" onAction="#handleHomeButtonAction" text="Home" />
+                        </children>
+                    </AnchorPane>
+                </content>
+            </Tab>
+            <Tab text="10.">
+                <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="445.0" prefWidth="658.0">
+                        <children>
+                            <VBox alignment="CENTER" spacing="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+                                <children>
+                                    <Label text="Correggi la riga contenente il codice sbagliato" />
+                                    <TextArea editable="false" prefHeight="200.0" prefWidth="600.0" text="public class BooleanTest {&#10;    public static void main(String[] args) {&#10;        boolean flag = 1;&#10;        if (flag) {&#10;            System.out.println(&quot;Flag is true&quot;);&#10;        }&#10;    }&#10;}&#10;&#10;" wrapText="true" />
+                                    <TextArea fx:id="userInput10" prefHeight="50.0" prefWidth="600.0" promptText="Fill in the blanks here..." />
+                                    <HBox alignment="CENTER" spacing="10.0">
+                                        <children>
+                                            <Button onAction="#handleCheckButtonAction" text="Check" />
+                                            <Button onAction="#handleBackButton" text="Back" />
+                                            <Button onAction="#handleNextButtonAction" text="Next" />
+                                        </children>
+                                    </HBox>
+                                </children>
+                            </VBox>
+                     <Button fx:id="HomeButton10" layoutX="300.0" layoutY="400.0" mnemonicParsing="false" onAction="#handleHomeButtonAction" text="Home" />
+                        </children>
+                    </AnchorPane>
+                </content>
+            </Tab>
+            <Tab text="Results">
+                <content>
+                    <VBox alignment="CENTER" spacing="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+                        <children>
+                            <Label style="-fx-font-size: 18px; -fx-font-weight: bold;" text="Game results" />
+                            <Label text="Player name:" />
+                            <Label fx:id="playerNameLabel" style="-fx-font-size: 16px;" text="Name" />
+                            <Label text="Percentage of correct answers:" />
+                            <Label fx:id="completionPercentageLabel" style="-fx-font-size: 16px;" text="0%" />
+                            <ProgressBar fx:id="completionProgressBar" prefWidth="600.0" progress="0" />
+                            <Button fx:id="HomeButton" mnemonicParsing="false" onAction="#handleHomeButtonAction" text="Home" />
+                        </children>
+                    </VBox>
+                </content>
+            </Tab>
+        </TabPane>
+    </center>
+</BorderPane>

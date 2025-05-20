@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AnswerController">
+    <top>
+        <HBox alignment="CENTER_LEFT" spacing="5.0" style="-fx-background-color: #336699;">
+            <children>
+                <Label style="-fx-text-fill: white; -fx-font-size: 16px;" text="Scrivi l'output del codice" />
+                <Label style="-fx-text-fill: white; -fx-font-size: 16px;" text="PLAY CODE" translateX="100.0" />
+            </children>
+            <padding>
+                <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+            </padding>
+        </HBox>
+    </top>
+    <center>
+        <TabPane fx:id="tabPane" tabClosingPolicy="UNAVAILABLE">
+            <!-- Repeat this Tab structure for each of your 10 tabs -->
+            <Tab text="1.">
+                <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="445.0" prefWidth="658.0">
+                        <children>
+                            <VBox alignment="CENTER" spacing="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+                                <children>
+                                    <Label text="Scrivi l'output" />
+                                    <TextArea editable="false" prefHeight="200.0" prefWidth="600.0" text="public class Main {&#10;        public static void main(String[] args) {&#10;            int a = 5;&#10;            int b = 3;&#10;            System.out.println(a + b);&#10;        }&#10;}&#10;" wrapText="true" />
+                                    <TextArea fx:id="userInput1" prefHeight="50.0" prefWidth="600.0" promptText="Fill in the blanks here..." />
+                                    <HBox alignment="CENTER" spacing="10.0">
+                                        <children>
+                                            <Button onAction="#handleCheckButtonAction" text="Check" />
+                                            <Button onAction="#handleBackButtonAction" text="Back" />
+                                            <Button fx:id="nextButton1" onAction="#handleNextButtonAction" text="Next" />
+                                        </children>
+                                    </HBox>
+                                </children>
+                            </VBox>
+                     <Button fx:id="homeButton1" layoutX="304.0" layoutY="405.0" mnemonicParsing="false" onAction="#handleHomeButtonAction" text="Home" />
+                        </children>
+                    </AnchorPane>
+                </content>
+            </Tab>
+            <Tab text="2.">
+                <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="445.0" prefWidth="658.0">
+                        <children>
+                            <VBox alignment="CENTER" spacing="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+                                <children>
+                                    <Label text="Scrivi l'output" />
+                                    <TextArea editable="false" prefHeight="200.0" prefWidth="600.0" text="public class Main {&#10;        public static void main(String[] args) {&#10;            String name = &quot;Java&quot;;&#10;            System.out.println(&quot;Hello &quot; + name);&#10;        }&#10;}&#10;&#10;&#10;" wrapText="true" />
+                                    <TextArea fx:id="userInput2" prefHeight="50.0" prefWidth="600.0" promptText="Fill in the blanks here..." />
+                                    <HBox alignment="CENTER" spacing="10.0">
+                                        <children>
+                                            <Button onAction="#handleCheckButtonAction" text="Check" />
+                                            <Button onAction="#handleBackButtonAction" text="Back" />
+                                            <Button onAction="#handleNextButtonAction" text="Next" />
+                                        </children>
+                                    </HBox>
+                                </children>
+                            </VBox>
+                     <Button fx:id="homeButton2" layoutX="304.0" layoutY="405.0" mnemonicParsing="false" onAction="#handleHomeButtonAction" text="Home" />
+                        </children>
+                    </AnchorPane>
+                </content>
+            </Tab>
+            <Tab text="3.">
+                <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="445.0" prefWidth="658.0">
+                        <children>
+                            <VBox alignment="CENTER" spacing="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+                                <children>
+                                    <Label text="Scrivi l'output" />
+                                    <TextArea editable="false" prefHeight="200.0" prefWidth="600.0" text="public class Main {&#10;        public static void main(String[] args) {&#10;            int x = 10;&#10;            if (x &gt; 5) {&#10;                System.out.println(&quot;x is big&quot;);&#10;            }&#10;        }&#10;}&#10;" wrapText="true" />
+                                    <TextArea fx:id="userInput3" prefHeight="50.0" prefWidth="600.0" promptText="Fill in the blanks here..." />
+                                    <HBox alignment="CENTER" spacing="10.0">
+                                        <children>
+                                            <Button onAction="#handleCheckButtonAction" text="Check" />
+                                            <Button onAction="#handleBackButtonAction" text="Back" />
+                                            <Button onAction="#handleNextButtonAction" text="Next" />
+                                        </children>
+                                    </HBox>
+                                </children>
+                            </VBox>
+                     <Button fx:id="homeButton3" layoutX="304.0" layoutY="405.0" mnemonicParsing="false" onAction="#handleHomeButtonAction" text="Home" />
+                        </children>
+                    </AnchorPane>
+                </content>
+            </Tab>
+            <Tab text="4.">
+                <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="406.0" prefWidth="658.0">
+                        <children>
+                            <VBox alignment="CENTER" spacing="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+                                <children>
+                                    <Label text="Scrivi l'output" />
+                                    <TextArea editable="false" prefHeight="200.0" prefWidth="600.0" text="public class Main {&#10;        public static void main(String[] args) {&#10;            boolean flag = false;&#10;            System.out.println(flag);&#10;        }&#10;}&#10;" wrapText="true" />
+                                    <TextArea fx:id="userInput4" prefHeight="50.0" prefWidth="600.0" promptText="Fill in the blanks here..." />
+                                    <HBox alignment="CENTER" spacing="10.0">
+                                        <children>
+                                            <Button onAction="#handleCheckButtonAction" text="Check" />
+                                            <Button onAction="#handleBackButtonAction" text="Back" />
+                                            <Button onAction="#handleNextButtonAction" text="Next" />
+                                        </children>
+                                    </HBox>
+                                </children>
+                            </VBox>
+                     <Button fx:id="homeButton4" layoutX="304.0" layoutY="405.0" mnemonicParsing="false" onAction="#handleHomeButtonAction" text="Home" />
+                        </children>
+                    </AnchorPane>
+                </content>
+            </Tab>
+            <Tab text="5.">
+                <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="445.0" prefWidth="658.0">
+                        <children>
+                            <VBox alignment="CENTER" spacing="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+                                <children>
+                                    <Label text="Scrivi l'output" />
+                                    <TextArea editable="false" prefHeight="200.0" prefWidth="600.0" text="public class Main {&#10;        public static void main(String[] args) {&#10;            int[] nums = {1, 2, 3};&#10;            System.out.println(nums[0]);&#10;        }&#10;}&#10;&#10;" wrapText="true" />
+                                    <TextArea fx:id="userInput5" prefHeight="50.0" prefWidth="600.0" promptText="Fill in the blanks here..." />
+                                    <HBox alignment="CENTER" spacing="10.0">
+                                        <children>
+                                            <Button onAction="#handleCheckButtonAction" text="Check" />
+                                            <Button onAction="#handleBackButtonAction" text="Back" />
+                                            <Button onAction="#handleNextButtonAction" text="Next" />
+                                        </children>
+                                    </HBox>
+                                </children>
+                            </VBox>
+                     <Button fx:id="homeButton5" layoutX="304.0" layoutY="405.0" mnemonicParsing="false" onAction="#handleHomeButtonAction" text="Home" />
+                        </children>
+                    </AnchorPane>
+                </content>
+            </Tab>
+            <Tab text="6.">
+                <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="445.0" prefWidth="658.0">
+                        <children>
+                            <VBox alignment="CENTER" spacing="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+                                <children>
+                                    <Label text="Scrivi l'output" />
+                                    <TextArea editable="false" prefHeight="200.0" prefWidth="600.0" text="public class Main {&#10;        public static void main(String[] args) {&#10;            String text = &quot;Code&quot;;&#10;        System.out.println(text.length());&#10;        }&#10;}&#10;&#10;" wrapText="true" />
+                                    <TextArea fx:id="userInput6" prefHeight="50.0" prefWidth="600.0" promptText="Fill in the blanks here..." />
+                                    <HBox alignment="CENTER" spacing="10.0">
+                                        <children>
+                                            <Button onAction="#handleCheckButtonAction" text="Check" />
+                                            <Button onAction="#handleBackButtonAction" text="Back" />
+                                            <Button onAction="#handleNextButtonAction" text="Next" />
+                                        </children>
+                                    </HBox>
+                                </children>
+                            </VBox>
+                     <Button fx:id="homeButton6" layoutX="304.0" layoutY="405.0" mnemonicParsing="false" onAction="#handleHomeButtonAction" text="Home" />
+                        </children>
+                    </AnchorPane>
+                </content>
+            </Tab>
+            <Tab text="7.">
+                <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="445.0" prefWidth="658.0">
+                        <children>
+                            <VBox alignment="CENTER" spacing="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+                                <children>
+                                    <Label text="Scrivi l'output" />
+                                    <TextArea editable="false" prefHeight="200.0" prefWidth="600.0" text="public class Main {&#10;        public static void main(String[] args) {&#10;            int x = 4;&#10;            int y = 2;&#10;            System.out.println(x * y);&#10;        }&#10;}" wrapText="true" />
+                                    <TextArea fx:id="userInput7" prefHeight="50.0" prefWidth="600.0" promptText="Fill in the blanks here..." />
+                                    <HBox alignment="CENTER" spacing="10.0">
+                                        <children>
+                                            <Button onAction="#handleCheckButtonAction" text="Check" />
+                                            <Button onAction="#handleBackButtonAction" text="Back" />
+                                            <Button onAction="#handleNextButtonAction" text="Next" />
+                                        </children>
+                                    </HBox>
+                                </children>
+                            </VBox>
+                     <Button fx:id="homeButton7" layoutX="304.0" layoutY="405.0" mnemonicParsing="false" onAction="#handleHomeButtonAction" text="Home" />
+                        </children>
+                    </AnchorPane>
+                </content>
+            </Tab>
+            <Tab text="8.">
+                <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="445.0" prefWidth="658.0">
+                        <children>
+                            <VBox alignment="CENTER" spacing="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+                                <children>
+                                    <Label text="Scrivi l'output" />
+                                    <TextArea editable="false" prefHeight="200.0" prefWidth="600.0" text="public class Main {&#10;        public static void main(String[] args) {&#10;            char c = 'A';&#10;            System.out.println((int)c);&#10;        }&#10;}&#10;" wrapText="true" />
+                                    <TextArea fx:id="userInput8" prefHeight="50.0" prefWidth="600.0" promptText="Fill in the blanks here..." />
+                                    <HBox alignment="CENTER" spacing="10.0">
+                                        <children>
+                                            <Button onAction="#handleCheckButtonAction" text="Check" />
+                                            <Button onAction="#handleBackButtonAction" text="Back" />
+                                            <Button onAction="#handleNextButtonAction" text="Next" />
+                                        </children>
+                                    </HBox>
+                                </children>
+                            </VBox>
+                     <Button fx:id="homeButton8" layoutX="304.0" layoutY="405.0" mnemonicParsing="false" onAction="#handleHomeButtonAction" text="Home" />
+                        </children>
+                    </AnchorPane>
+                </content>
+            </Tab>
+            <Tab text="9.">
+                <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="445.0" prefWidth="658.0">
+                        <children>
+                            <VBox alignment="CENTER" spacing="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+                                <children>
+                                    <Label text="Scrivi l'output" />
+                                    <TextArea editable="false" prefHeight="200.0" prefWidth="600.0" text="public class Main {&#10;        public static void main(String[] args) {&#10;            double d = 3.5;&#10;            System.out.println(&quot;Value: &quot; + d);&#10;        }&#10;}&#10;&#10;" wrapText="true" />
+                                    <TextArea fx:id="userInput9" prefHeight="50.0" prefWidth="600.0" promptText="Fill in the blanks here..." />
+                                    <HBox alignment="CENTER" spacing="10.0">
+                                        <children>
+                                            <Button onAction="#handleCheckButtonAction" text="Check" />
+                                            <Button onAction="#handleBackButtonAction" text="Back" />
+                                            <Button onAction="#handleNextButtonAction" text="Next" />
+                                        </children>
+                                    </HBox>
+                                </children>
+                            </VBox>
+                     <Button fx:id="homeButton9" layoutX="304.0" layoutY="405.0" mnemonicParsing="false" onAction="#handleHomeButtonAction" text="Home" />
+                        </children>
+                    </AnchorPane>
+                </content>
+            </Tab>
+            <Tab text="10.">
+                <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="445.0" prefWidth="658.0">
+                        <children>
+                            <VBox alignment="CENTER" spacing="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+                                <children>
+                                    <Label text="Scrivi l'output" />
+                                    <TextArea editable="false" prefHeight="200.0" prefWidth="600.0" text="public class Main {&#10;        public static void main(String[] args) {&#10;            System.out.println(&quot;Line 1&quot;);&#10;        }&#10;}&#10;" wrapText="true" />
+                                    <TextArea fx:id="userInput10" prefHeight="50.0" prefWidth="600.0" promptText="Fill in the blanks here..." />
+                                    <HBox alignment="CENTER" spacing="10.0">
+                                        <children>
+                                            <Button onAction="#handleCheckButtonAction" text="Check" />
+                                            <Button onAction="#handleBackButtonAction" text="Back" />
+                                            <Button onAction="#handleNextButtonAction" text="Next" />
+                                        </children>
+                                    </HBox>
+                                </children>
+                            </VBox>
+                     <Button fx:id="homeButton10" layoutX="304.0" layoutY="405.0" mnemonicParsing="false" onAction="#handleHomeButtonAction" text="Home" />
+                        </children>
+                    </AnchorPane>
+                </content>
+            </Tab>
+            <Tab text="Results">
+                <content>
+                    <VBox alignment="CENTER" spacing="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+                        <children>
+                            <Label prefHeight="23.0" prefWidth="63.0" style="-fx-font-size: 18px; -fx-font-weight: bold;" text="Risultati" />
+                            <Label text="Player name:" />
+                            <Label fx:id="playerNameLabel" style="-fx-font-size: 16px;" text="Name" />
+                            <Label text="Percentuale di risposte corrette:" />
+                            <Label fx:id="completionPercentageLabel" style="-fx-font-size: 16px;" text="0%" />
+                            <ProgressBar fx:id="completionProgressBar" prefWidth="600.0" progress="0" />
+                            <Button fx:id="homeButton" mnemonicParsing="false" onAction="#handleHomeButtonAction" text="Home" />
+                        </children>
+                    </VBox>
+                </content>
+            </Tab>
+        </TabPane>
+    </center>
+</BorderPane>

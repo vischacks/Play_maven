@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CodeDebugController">
+    <top>
+        <HBox alignment="CENTER_LEFT" spacing="5.0" style="-fx-background-color: #336699;">
+            <children>
+                <Label style="-fx-text-fill: white; -fx-font-size: 16px;" text="Debug the code" />
+                <Label style="-fx-text-fill: white; -fx-font-size: 16px;" text="PLAY CODE" />
+            </children>
+            <padding>
+                <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+            </padding>
+        </HBox>
+    </top>
+    <center>
+        <TabPane fx:id="tabPane" tabClosingPolicy="UNAVAILABLE">
+            <!-- Repeat this Tab structure for each of your 10 tabs -->
+            <Tab text="1.">
+                <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="445.0" prefWidth="658.0">
+                        <children>
+                            <VBox alignment="CENTER" spacing="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+                                <children>
+                                    <Label text="Correggi la riga contenente il codice sbagliato" />
+                                    <TextArea editable="false" prefHeight="200.0" prefWidth="600.0" text="public class PalindromeCheck {&#10; public static void main(String[] args) {&#10; String word = &quot;racecar&quot;;&#10; String reversed = &quot;&quot;;&#10; for (int i = 0; i &lt;= word.length(); i++) {&#10; reversed += word.charAt(i);&#10; }&#10; if (word == reversed) {&#10; System.out.println(&quot;Palindrome&quot;);&#10; } else {&#10; System.out.println(&quot;Not a palindrome&quot;);&#10; }&#10; }&#10;}&#10;" wrapText="true" />
+                                    <TextArea fx:id="userInput1" prefHeight="50.0" prefWidth="600.0" promptText="Fill in the blanks here..." />
+                                    <HBox alignment="CENTER" spacing="10.0">
+                                        <children>
+                                            <Button onAction="#handleCheckButtonAction" text="Check" />
+                                            <Button onAction="#handleBackButton" text="Back" />
+                                            <Button fx:id="nextButton1" onAction="#handleNextButtonAction" text="Next" />
+                                        </children>
+                                    </HBox>
+                                </children>
+                            </VBox>
+                     <Button fx:id="HomeButton1" layoutX="300.0" layoutY="400.0" mnemonicParsing="false" onAction="#handleHomeButtonAction" text="Home" />
+                        </children>
+                    </AnchorPane>
+                </content>
+            </Tab>
+            <Tab text="2.">
+                <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="445.0" prefWidth="658.0">
+                        <children>
+                            <VBox alignment="CENTER" spacing="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+                                <children>
+                                    <Label text="Correggi la riga contenente il codice sbagliato" />
+                                    <TextArea editable="false" prefHeight="200.0" prefWidth="600.0" text="public class Fibonacci {&#10; public static void main(String[] args) {&#10; int n = 10;&#10; int[] fib = new int[n];&#10; fib[0] = 0;&#10; fib[1] = 1;&#10; for (int i = 2; i &lt;= n; i++) {&#10; fib[i] = fib[i - 1] + fib[i - 2];&#10; }&#10; System.out.println(fib[n]);&#10; }&#10;}&#10;&#10;&#10;" wrapText="true" />
+                                    <TextArea fx:id="userInput2" prefHeight="50.0" prefWidth="600.0" promptText="Fill in the blanks here..." />
+                                    <HBox alignment="CENTER" spacing="10.0">
+                                        <children>
+                                            <Button onAction="#handleCheckButtonAction" text="Check" />
+                                            <Button onAction="#handleBackButton" text="Back" />
+                                            <Button onAction="#handleNextButtonAction" text="Next" />
+                                        </children>
+                                    </HBox>
+                                </children>
+                            </VBox>
+                     <Button fx:id="HomeButton2" layoutX="300.0" layoutY="400.0" mnemonicParsing="false" onAction="#handleHomeButtonAction" text="Home" />
+                        </children>
+                    </AnchorPane>
+                </content>
+            </Tab>
+            <Tab text="3.">
+                <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="445.0" prefWidth="658.0">
+                        <children>
+                            <VBox alignment="CENTER" spacing="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+                                <children>
+                                    <Label text="Correggi la riga contenente il codice sbagliato" />
+                                    <TextArea editable="false" prefHeight="200.0" prefWidth="600.0" text="public class PrimeCheck {&#10; public static void main(String[] args) {&#10; int num = 29;&#10; boolean isPrime = true;&#10; for (int i = 2; i &lt; num / 2; i++) {&#10; if (num % i == 0) {&#10; isPrime = false;&#10; break;&#10; }&#10; }&#10; System.out.println(num + &quot; is prime: &quot; + isPrime);&#10; }&#10;}&#10;&#10;" wrapText="true" />
+                                    <TextArea fx:id="userInput3" prefHeight="50.0" prefWidth="600.0" promptText="Fill in the blanks here..." />
+                                    <HBox alignment="CENTER" spacing="10.0">
+                                        <children>
+                                            <Button onAction="#handleCheckButtonAction" text="Check" />
+                                            <Button onAction="#handleBackButton" text="Back" />
+                                            <Button onAction="#handleNextButtonAction" text="Next" />
+                                        </children>
+                                    </HBox>
+                                </children>
+                            </VBox>
+                     <Button fx:id="HomeButton3" layoutX="300.0" layoutY="400.0" mnemonicParsing="false" onAction="#handleHomeButtonAction" text="Home" />
+                        </children>
+                    </AnchorPane>
+                </content>
+            </Tab>
+            <Tab text="4.">
+                <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="445.0" prefWidth="658.0">
+                        <children>
+                            <VBox alignment="CENTER" spacing="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+                                <children>
+                                    <Label text="Correggi la riga contenente il codice sbagliato" />
+                                    <TextArea editable="false" prefHeight="200.0" prefWidth="600.0" text="public class ObjectReference {&#10; public static void main(String[] args) {&#10; Person p1 = new Person(&quot;Alice&quot;);&#10; Person p2 = new Person(&quot;Alice&quot;);&#10; if (p1 == p2) {&#10; System.out.println(&quot;Same person&quot;);&#10; } else {&#10; System.out.println(&quot;Different persons&quot;);&#10; }&#10; }&#10;}&#10;" wrapText="true" />
+                                    <TextArea fx:id="userInput4" prefHeight="50.0" prefWidth="600.0" promptText="Fill in the blanks here..." />
+                                    <HBox alignment="CENTER" spacing="10.0">
+                                        <children>
+                                            <Button onAction="#handleCheckButtonAction" text="Check" />
+                                            <Button onAction="#handleBackButton" text="Back" />
+                                            <Button onAction="#handleNextButtonAction" text="Next" />
+                                        </children>
+                                    </HBox>
+                                </children>
+                            </VBox>
+                     <Button fx:id="HomeButton4" layoutX="300.0" layoutY="400.0" mnemonicParsing="false" onAction="#handleHomeButtonAction" text="Home" />
+                        </children>
+                    </AnchorPane>
+                </content>
+            </Tab>
+            <Tab text="5.">
+                <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="445.0" prefWidth="658.0">
+                        <children>
+                            <VBox alignment="CENTER" spacing="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+                                <children>
+                                    <Label text="Correggi la riga contenente il codice sbagliato" />
+                                    <TextArea editable="false" prefHeight="200.0" prefWidth="600.0" text="import java.util.ArrayList;&#10;public class ListTest {&#10; public static void main(String[] args) {&#10; ArrayList&lt;int&gt; list = new ArrayList&lt;&gt;();&#10; list.add(10);&#10; list.add(20);&#10; System.out.println(list.get(1));&#10; }&#10;}&#10;&#10;&#10;" wrapText="true" />
+                                    <TextArea fx:id="userInput5" prefHeight="50.0" prefWidth="600.0" promptText="Fill in the blanks here..." />
+                                    <HBox alignment="CENTER" spacing="10.0">
+                                        <children>
+                                            <Button onAction="#handleCheckButtonAction" text="Check" />
+                                            <Button onAction="#handleBackButton" text="Back" />
+                                            <Button onAction="#handleNextButtonAction" text="Next" />
+                                        </children>
+                                    </HBox>
+                                </children>
+                            </VBox>
+                     <Button fx:id="HomeButton5" layoutX="300.0" layoutY="400.0" mnemonicParsing="false" onAction="#handleHomeButtonAction" text="Home" />
+                        </children>
+                    </AnchorPane>
+                </content>
+            </Tab>
+            <Tab text="6.">
+                <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="445.0" prefWidth="658.0">
+                        <children>
+                            <VBox alignment="CENTER" spacing="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+                                <children>
+                                    <Label text="Correggi la riga contenente il codice sbagliato" />
+                                    <TextArea editable="false" prefHeight="200.0" prefWidth="600.0" text="public class ExceptionTest {&#10; public static void main(String[] args) {&#10; try {&#10; int[] numbers = {1, 2, 3};&#10; System.out.println(numbers[3]);&#10; } catch (Exception e) {&#10; System.out.println(&quot;An error occurred: &quot; + e.getMessage());&#10; } finally {&#10; System.out.println(&quot;Execution completed.&quot;);&#10; }&#10; }&#10;}&#10;&#10;" wrapText="true" />
+                                    <TextArea fx:id="userInput6" prefHeight="50.0" prefWidth="600.0" promptText="Fill in the blanks here..." />
+                                    <HBox alignment="CENTER" spacing="10.0">
+                                        <children>
+                                            <Button onAction="#handleCheckButtonAction" text="Check" />
+                                            <Button onAction="#handleBackButton" text="Back" />
+                                            <Button onAction="#handleNextButtonAction" text="Next" />
+                                        </children>
+                                    </HBox>
+                                </children>
+                            </VBox>
+                     <Button fx:id="HomeButton6" layoutX="300.0" layoutY="400.0" mnemonicParsing="false" onAction="#handleHomeButtonAction" text="Home" />
+                        </children>
+                    </AnchorPane>
+                </content>
+            </Tab>
+            <Tab text="7.">
+                <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="445.0" prefWidth="658.0">
+                        <children>
+                            <VBox alignment="CENTER" spacing="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+                                <children>
+                                    <Label text="Correggi la riga contenente il codice sbagliato" />
+                                    <TextArea editable="false" prefHeight="200.0" prefWidth="600.0" text="public class OverloadingTest {&#10; public static void main(String[] args) {&#10; System.out.println(sum(5, 10));&#10; System.out.println(sum(5.5, 10.5));&#10; }&#10; public static int sum(int a, int b) {&#10; return a + b;&#10; }&#10; public static int sum(double a, double b) {&#10; return (int) (a + b);&#10; }&#10;}&#10;" wrapText="true" />
+                                    <TextArea fx:id="userInput7" prefHeight="50.0" prefWidth="600.0" promptText="Fill in the blanks here..." />
+                                    <HBox alignment="CENTER" spacing="10.0">
+                                        <children>
+                                            <Button onAction="#handleCheckButtonAction" text="Check" />
+                                            <Button onAction="#handleBackButton" text="Back" />
+                                            <Button onAction="#handleNextButtonAction" text="Next" />
+                                        </children>
+                                    </HBox>
+                                </children>
+                            </VBox>
+                     <Button fx:id="HomeButton7" layoutX="300.0" layoutY="400.0" mnemonicParsing="false" onAction="#handleHomeButtonAction" text="Home" />
+                        </children>
+                    </AnchorPane>
+                </content>
+            </Tab>
+            <Tab text="8.">
+                <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="445.0" prefWidth="658.0">
+                        <children>
+                            <VBox alignment="CENTER" spacing="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+                                <children>
+                                    <Label text="Correggi la riga contenente il codice sbagliato" />
+                                    <TextArea editable="false" prefHeight="200.0" prefWidth="600.0" text="public class ThreadExample extends Thread {&#10; public void run() {&#10; for (int i = 0; i &lt; 5; i++) {&#10; System.out.println(Thread.currentThread().getName() + &quot;: &quot; + i);&#10; }&#10; }&#10; public static void main(String[] args) {&#10; ThreadExample t1 = new ThreadExample();&#10; ThreadExample t2 = new ThreadExample();&#10; t1.run();&#10; t2.run();&#10; }&#10;}&#10;&#10;&#10;" wrapText="true" />
+                                    <TextArea fx:id="userInput8" prefHeight="50.0" prefWidth="600.0" promptText="Fill in the blanks here..." />
+                                    <HBox alignment="CENTER" spacing="10.0">
+                                        <children>
+                                            <Button onAction="#handleCheckButtonAction" text="Check" />
+                                            <Button onAction="#handleBackButton" text="Back" />
+                                            <Button onAction="#handleNextButtonAction" text="Next" />
+                                        </children>
+                                    </HBox>
+                                </children>
+                            </VBox>
+                     <Button fx:id="HomeButton8" layoutX="300.0" layoutY="400.0" mnemonicParsing="false" onAction="#handleHomeButtonAction" text="Home" />
+                        </children>
+                    </AnchorPane>
+                </content>
+            </Tab>
+            <Tab text="9.">
+                <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="445.0" prefWidth="658.0">
+                        <children>
+                            <VBox alignment="CENTER" spacing="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+                                <children>
+                                    <Label text="Correggi la riga contenente il codice sbagliato" />
+                                    <TextArea editable="false" prefHeight="200.0" prefWidth="600.0" text="public class MapExample {&#10; public static void main(String[] args) {&#10; Map&lt;String, Integer&gt; map = new HashMap&lt;&gt;();&#10; map.put(&quot;A&quot;, 1);&#10; map.put(&quot;B&quot;, 2);&#10; if (map[&quot;A&quot;] == 1) {&#10; System.out.println(&quot;A is mapped to 1&quot;);&#10; }&#10; }&#10;}&#10;&#10;" wrapText="true" />
+                                    <TextArea fx:id="userInput9" prefHeight="50.0" prefWidth="600.0" promptText="Fill in the blanks here..." />
+                                    <HBox alignment="CENTER" spacing="10.0">
+                                        <children>
+                                            <Button onAction="#handleCheckButtonAction" text="Check" />
+                                            <Button onAction="#handleBackButton" text="Back" />
+                                            <Button onAction="#handleNextButtonAction" text="Next" />
+                                        </children>
+                                    </HBox>
+                                </children>
+                            </VBox>
+                     <Button fx:id="HomeButton9" layoutX="300.0" layoutY="400.0" mnemonicParsing="false" onAction="#handleHomeButtonAction" text="Home" />
+                        </children>
+                    </AnchorPane>
+                </content>
+            </Tab>
+            <Tab text="10.">
+                <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="445.0" prefWidth="658.0">
+                        <children>
+                            <VBox alignment="CENTER" spacing="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+                                <children>
+                                    <Label text="Correggi la riga contenente il codice sbagliato" />
+                                    <TextArea editable="false" prefHeight="200.0" prefWidth="600.0" text="public class InheritanceTest {&#10; public static void main(String[] args) {&#10; Child obj = new Child();&#10; obj.display();&#10; }&#10;}&#10;class Parent {&#10; private void display() {&#10; System.out.println(&quot;Parent class&quot;);&#10; }&#10;}&#10;class Child extends Parent {&#10; public void display() {&#10; System.out.println(&quot;Child class&quot;);&#10; }&#10;}&#10;" wrapText="true" />
+                                    <TextArea fx:id="userInput10" prefHeight="50.0" prefWidth="600.0" promptText="Fill in the blanks here..." />
+                                    <HBox alignment="CENTER" spacing="10.0">
+                                        <children>
+                                            <Button onAction="#handleCheckButtonAction" text="Check" />
+                                            <Button onAction="#handleBackButton" text="Back" />
+                                            <Button onAction="#handleNextButtonAction" text="Next" />
+                                        </children>
+                                    </HBox>
+                                </children>
+                            </VBox>
+                     <Button fx:id="HomeButton10" layoutX="300.0" layoutY="400.0" mnemonicParsing="false" onAction="#handleHomeButtonAction" text="Home" />
+                        </children>
+                    </AnchorPane>
+                </content>
+            </Tab>
+            <Tab text="Results">
+                <content>
+                    <VBox alignment="CENTER" spacing="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+                        <children>
+                            <Label style="-fx-font-size: 18px; -fx-font-weight: bold;" text="Game results" />
+                            <Label text="Player name:" />
+                            <Label fx:id="playerNameLabel" style="-fx-font-size: 16px;" text="Name" />
+                            <Label text="Percentage of correct answers:" />
+                            <Label fx:id="completionPercentageLabel" style="-fx-font-size: 16px;" text="0%" />
+                            <ProgressBar fx:id="completionProgressBar" prefWidth="600.0" progress="0" />
+                            <Button fx:id="HomeButton" mnemonicParsing="false" onAction="#handleHomeButtonAction" text="Home" />
+                        </children>
+                    </VBox>
+                </content>
+            </Tab>
+        </TabPane>
+    </center>
+</BorderPane>

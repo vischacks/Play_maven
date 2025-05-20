@@ -1,0 +1,15 @@
+Da fare (scritte da giacomo):
+sistemare bottone home [OK]
+sistemare ExerciseListView:
+    Migliorare griglia
+    Aggiungere descrizioni
+    Aggiungere percentuale completamento [OK]
+Sistemare il metodo in cui vengono salvati i dati in results.csv (sovrascrivere i dati se ci sono già presenti lo username e il nome del gioco)
+aggiungere esercizi
+sovrascrivere i dati in results.csv e non aggiungere nuove righe
+
+
+elia
+finito es 4 
+cose da fare 
+

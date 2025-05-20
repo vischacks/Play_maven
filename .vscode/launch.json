@@ -1,0 +1,20 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "main.java.main.Main",
+            "projectName": "Play_f32382ca"
+        },
+        {
+            "type": "java",
+            "name": "Launch Main",
+            "request": "launch",
+            "mainClass": "Main",
+            "projectName": "Play",
+            "vmArgs": "--module-path /Library/Java/Libraries/javafx-sdk-21.0.2/lib --add-modules javafx.controls,javafx.fxml"
+        }
+    ]
+}

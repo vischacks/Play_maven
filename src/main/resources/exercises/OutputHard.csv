@@ -1,0 +1,10 @@
+[10, 20]
+Cannot divide by zero
+8
+Thread running
+(l’output dipende dal contenuto del file example.txt)
+Hello World
+Alice
+(nessun output visibile, ma il file output.txt viene scritto)
+File exists (oppure) File does not exist (dipende dalla presenza del file)
+(nessun output visibile, ma il file destination.txt viene creato o sovrascritto)

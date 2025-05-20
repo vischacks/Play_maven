@@ -1,0 +1,65 @@
+.button {
+    -fx-background-color: #19244d;
+    -fx-text-fill: white;
+    -fx-font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    -fx-font-size: 14px;
+    -fx-pref-height: 50px;
+    -fx-pref-width: 200px;
+    -fx-alignment: center;
+    -fx-content-display: center;
+    -fx-cursor: hand; /* Cambia il cursore al passaggio del mouse */
+    -fx-border-width: 2px;
+    -fx-border-color: transparent;
+    -fx-background-radius: 5px;
+    -fx-border-radius: 5px;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.4), 10, 0, 0, 1);
+    -fx-transition: all 0.3s ease; /* Animazione fluida */
+}
+
+.button:hover {
+    -fx-background-color: #0d2054;
+    -fx-text-fill: white;
+    -fx-border-color: #0d2054;
+    -fx-background-radius: 10px;
+    -fx-border-radius: 10px;
+    -fx-scale-x: 1.1;
+    -fx-scale-y: 1.1;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.8), 15, 0, 0, 2);
+}
+
+.button:pressed {
+    -fx-background-color: #0d2054;
+    -fx-text-fill: white;
+    -fx-border-color: #0d2054;
+    -fx-background-radius: 10px;
+    -fx-border-radius: 10px;
+    -fx-scale-x: 0.9;
+    -fx-scale-y: 0.9;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.8), 10, 0, 0, 2);
+}
+
+/* Stile per la ProgressBar */
+.progress-bar {
+    -fx-background-color: #e0e0e0;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+}
+
+.progress-bar .track {
+    -fx-background-color: #d3d3d3;
+    -fx-background-radius: 10px;
+}
+
+.progress-bar .bar {
+    -fx-background-color: linear-gradient(to right, #4caf50, #81c784);
+    -fx-background-radius: 10px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.3), 5, 0, 0, 1);
+}
+
+/* Stile per il testo sopra la ProgressBar */
+.progress-bar-text {
+    -fx-font-size: 14px;
+    -fx-font-family: 'Arial';
+    -fx-font-weight: bold;
+    -fx-text-fill: #ffffff;
+}
